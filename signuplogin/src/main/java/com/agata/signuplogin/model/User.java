@@ -11,7 +11,7 @@ import jakarta.validation.constraints.NotBlank;
 public class User {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank
     private String name;
